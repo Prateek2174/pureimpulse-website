@@ -1,0 +1,71 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title="About" description="About PureImpulse Studios — who we are and what drives us.">
+
+  <section class="max-w-4xl mx-auto px-6 py-24">
+    <p class="font-display text-xs tracking-[0.4em] uppercase text-amber-500/70 mb-4">The Studio</p>
+    <h1 class="font-display text-5xl font-semibold text-stone-100 mb-12">About PureImpulse</h1>
+
+    <div class="grid md:grid-cols-5 gap-12 mb-20">
+      <div class="md:col-span-3">
+        <p class="text-stone-300 text-lg leading-relaxed mb-6">
+          PureImpulse Studios is an indie game studio focused on crafting story-driven RPG experiences that leave a mark.
+        </p>
+        <p class="text-stone-500 leading-relaxed mb-4">
+          We believe the best games are the ones that take risks — in narrative, in mechanics, in atmosphere. Our work is built slowly, carefully, and with genuine creative ambition.
+        </p>
+        <p class="text-stone-500 leading-relaxed mb-4">
+          Our debut title, <span class="text-stone-300">Twilight Rites</span>, is a turn-based action RPG developed in Unreal Engine 5. It takes the tactical depth of classic RPGs and fuses it with active, timing-based combat — all wrapped in a cinematic, story-first world.
+        </p>
+        <p class="text-stone-500 leading-relaxed">
+          We share our process openly. Every major decision, technical challenge, and creative milestone gets documented in our devlog — because indie game development should be transparent.
+        </p>
+      </div>
+
+      <!-- Logo / identity placeholder -->
+      <div class="md:col-span-2 flex items-center justify-center">
+        <div class="border border-amber-700/40 p-8 text-center w-full max-w-xs">
+          <div class="w-16 h-16 border border-amber-600/60 mx-auto mb-4 flex items-center justify-center">
+            <div class="w-8 h-8 border border-amber-500/60 rotate-45"></div>
+          </div>
+          <p class="font-display text-amber-400 tracking-[0.3em] uppercase text-sm">PureImpulse</p>
+          <p class="font-display text-stone-600 tracking-[0.2em] uppercase text-xs mt-1">Studios</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Values -->
+    <div class="border-t border-stone-800 pt-16 mb-16">
+      <p class="font-display text-xs tracking-[0.4em] uppercase text-amber-500/70 mb-8">What Drives Us</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        {[
+          { title: 'Story First', desc: 'Every mechanic, every system, every design choice exists to serve the narrative and the world.' },
+          { title: 'Craft Over Speed', desc: 'We build slowly and deliberately. Quality and intention matter more than output volume.' },
+          { title: 'Open Development', desc: 'We document our process publicly — the successes and the struggles — so others can learn alongside us.' },
+        ].map(v => (
+          <div>
+            <h3 class="font-display text-stone-200 mb-3">{v.title}</h3>
+            <p class="text-stone-500 text-sm leading-relaxed">{v.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="border border-stone-800 p-8 text-center">
+      <p class="font-display text-stone-400 text-sm tracking-widest uppercase mb-4">Follow the Journey</p>
+      <p class="text-stone-500 mb-6">Stay up to date with development via our devlog and community channels.</p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/devlog" class="px-6 py-3 bg-amber-600 hover:bg-amber-500 text-stone-950 font-semibold tracking-widest text-sm uppercase transition-colors">
+          Read the Devlog
+        </a>
+        <a href="/contact" class="px-6 py-3 border border-stone-700 hover:border-amber-700 text-stone-400 hover:text-amber-400 text-sm tracking-widest uppercase transition-colors">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </section>
+
+</Layout>

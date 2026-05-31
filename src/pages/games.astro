@@ -1,0 +1,76 @@
+---
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title="Games" description="Games by PureImpulse Studios — Twilight Rites and future projects.">
+
+  <section class="max-w-6xl mx-auto px-6 py-24">
+    <p class="font-display text-xs tracking-[0.4em] uppercase text-amber-500/70 mb-4">Our Work</p>
+    <h1 class="font-display text-5xl font-semibold text-stone-100 mb-16">Games</h1>
+
+    <!-- Featured game -->
+    <div class="grid md:grid-cols-2 gap-12 items-start border border-stone-800 p-8 mb-16 relative overflow-hidden">
+      <div class="absolute top-4 right-4">
+        <span class="text-xs tracking-widest uppercase text-amber-500 border border-amber-700/60 px-3 py-1 font-display">In Development</span>
+      </div>
+
+      <!-- Art placeholder -->
+      <div class="aspect-video bg-stone-900 border border-stone-800 flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#7c2d1215_0%,_transparent_70%)]"></div>
+        <p class="font-display text-stone-700 text-sm tracking-widest uppercase">Key Art — Coming Soon</p>
+      </div>
+
+      <div>
+        <h2 class="font-display text-4xl font-bold text-stone-100 mb-2">Twilight<br/><span class="text-amber-400">Rites</span></h2>
+        <p class="text-stone-600 text-sm tracking-wide mb-6">Turn-Based Action RPG &middot; Unreal Engine 5</p>
+
+        <p class="text-stone-400 leading-relaxed mb-4">
+          <!-- Game description — replace with Milanote content -->
+          Twilight Rites is a story-driven turn-based action RPG set in a dark and atmospheric world. Players explore freely in third-person, and when they encounter enemies, the world shifts into a structured turn-based combat arena.
+        </p>
+        <p class="text-stone-500 leading-relaxed mb-8">
+          Combat rewards timing and tactical decision-making, with active input elements that keep every encounter engaging. Inspired by the cinematic ambition of Clair Obscur: Expedition 33.
+        </p>
+
+        <div class="grid grid-cols-2 gap-4 mb-8">
+          {[
+            { label: 'Genre', value: 'Turn-Based Action RPG' },
+            { label: 'Engine', value: 'Unreal Engine 5.5' },
+            { label: 'Platform', value: 'PC (Windows)' },
+            { label: 'Status', value: 'Early Development' },
+          ].map(item => (
+            <div>
+              <p class="text-stone-600 text-xs tracking-widest uppercase mb-1">{item.label}</p>
+              <p class="text-stone-300 text-sm">{item.value}</p>
+            </div>
+          ))}
+        </div>
+
+        <a href="/devlog" class="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 text-sm tracking-wide uppercase transition-colors">
+          Follow development &rarr;
+        </a>
+      </div>
+    </div>
+
+    <!-- Features -->
+    <div>
+      <p class="font-display text-xs tracking-[0.4em] uppercase text-amber-500/70 mb-8">Key Features</p>
+      <div class="grid md:grid-cols-3 gap-6">
+        {[
+          { title: 'Third-Person Exploration', desc: 'Freely explore a dark, handcrafted world with cinematic atmosphere and environmental storytelling.' },
+          { title: 'Turn-Based Combat', desc: 'Encounter enemies and enter a structured tactical combat mode with meaningful choices each turn.' },
+          { title: 'Action Timing', desc: 'Active input during attacks and enemy turns keeps combat dynamic — every reaction matters.' },
+          { title: 'Story-Driven', desc: 'A narrative-first experience with characters and a world designed to pull you in.' },
+          { title: 'Cinematic Aesthetic', desc: 'Inspired by the visual ambition of modern RPGs — every scene is composed with intent.' },
+          { title: 'Skill System', desc: 'Unlock and equip special abilities that change how you approach combat encounters.' },
+        ].map(f => (
+          <div class="border border-stone-800 p-6 hover:border-amber-800/40 transition-colors">
+            <h3 class="font-display text-stone-200 text-base mb-3">{f.title}</h3>
+            <p class="text-stone-500 text-sm leading-relaxed">{f.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+</Layout>
