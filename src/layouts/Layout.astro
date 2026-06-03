@@ -20,39 +20,39 @@ const { title = 'PureImpulse Studios', description = 'Indie game studio crafting
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   </head>
-  <body class="bg-stone-950 text-stone-200 font-sans min-h-screen">
+  <body class="text-slate-200 font-sans min-h-screen" style="background-color:#06080f;">
 
     <!-- Nav -->
-    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-stone-800/60 bg-stone-950/95 backdrop-blur-md">
+    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-slate-800/50 backdrop-blur-md" style="background-color:#06080fdd;">
       <div class="max-w-6xl mx-auto px-6 flex items-center justify-between h-28">
         <a href="/" class="flex items-center">
-          <img src="/logo.png" alt="PureImpulse Studios" class="h-24 w-auto opacity-80 hover:opacity-100 transition-opacity" />
+          <img src="/logo.png" alt="PureImpulse Studios" class="h-24 w-auto opacity-75 hover:opacity-100 transition-opacity" />
         </a>
 
         <!-- Desktop links -->
-        <div class="hidden md:flex items-center gap-8 text-sm tracking-wide">
-          <a href="/" class="text-stone-400 hover:text-stone-100 transition-colors">Home</a>
-          <a href="/games" class="text-stone-400 hover:text-stone-100 transition-colors">Games</a>
-          <a href="/devlog" class="text-stone-400 hover:text-stone-100 transition-colors">Devlog</a>
-          <a href="/about" class="text-stone-400 hover:text-stone-100 transition-colors">About</a>
-          <a href="/contact" class="text-stone-400 hover:text-stone-100 transition-colors">Contact</a>
+        <div class="hidden md:flex items-center gap-8 text-sm tracking-widest uppercase font-display">
+          <a href="/" class="text-slate-500 hover:text-slate-200 transition-colors">Home</a>
+          <a href="/games" class="text-slate-500 hover:text-slate-200 transition-colors">Games</a>
+          <a href="/devlog" class="text-slate-500 hover:text-slate-200 transition-colors">Devlog</a>
+          <a href="/about" class="text-slate-500 hover:text-slate-200 transition-colors">About</a>
+          <a href="/contact" class="text-slate-500 hover:text-slate-200 transition-colors">Contact</a>
         </div>
 
         <!-- Mobile hamburger -->
-        <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-2 group" aria-label="Toggle menu">
-          <span id="bar1" class="block w-6 h-0.5 bg-stone-400 transition-all duration-300"></span>
-          <span id="bar2" class="block w-6 h-0.5 bg-stone-400 transition-all duration-300"></span>
-          <span id="bar3" class="block w-6 h-0.5 bg-stone-400 transition-all duration-300"></span>
+        <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle menu">
+          <span id="bar1" class="block w-6 h-0.5 bg-slate-400 transition-all duration-300"></span>
+          <span id="bar2" class="block w-6 h-0.5 bg-slate-400 transition-all duration-300"></span>
+          <span id="bar3" class="block w-6 h-0.5 bg-slate-400 transition-all duration-300"></span>
         </button>
       </div>
 
-      <!-- Mobile menu — full screen overlay -->
-      <div id="mobile-menu" class="fixed inset-0 top-28 bg-stone-950 z-40 flex flex-col items-center justify-center gap-10 translate-x-full transition-transform duration-300 ease-in-out md:hidden">
-        <a href="/" class="font-display text-3xl text-stone-300 hover:text-amber-400 transition-colors tracking-widest uppercase">Home</a>
-        <a href="/games" class="font-display text-3xl text-stone-300 hover:text-amber-400 transition-colors tracking-widest uppercase">Games</a>
-        <a href="/devlog" class="font-display text-3xl text-stone-300 hover:text-amber-400 transition-colors tracking-widest uppercase">Devlog</a>
-        <a href="/about" class="font-display text-3xl text-stone-300 hover:text-amber-400 transition-colors tracking-widest uppercase">About</a>
-        <a href="/contact" class="font-display text-3xl text-stone-300 hover:text-amber-400 transition-colors tracking-widest uppercase">Contact</a>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="fixed inset-0 top-28 z-40 flex flex-col items-center justify-center gap-10 translate-x-full transition-transform duration-300 ease-in-out md:hidden" style="background-color:#06080f;">
+        <a href="/" class="font-display text-3xl text-slate-300 hover:text-white transition-colors tracking-widest uppercase">Home</a>
+        <a href="/games" class="font-display text-3xl text-slate-300 hover:text-white transition-colors tracking-widest uppercase">Games</a>
+        <a href="/devlog" class="font-display text-3xl text-slate-300 hover:text-white transition-colors tracking-widest uppercase">Devlog</a>
+        <a href="/about" class="font-display text-3xl text-slate-300 hover:text-white transition-colors tracking-widest uppercase">About</a>
+        <a href="/contact" class="font-display text-3xl text-slate-300 hover:text-white transition-colors tracking-widest uppercase">Contact</a>
       </div>
     </nav>
 
@@ -61,8 +61,8 @@ const { title = 'PureImpulse Studios', description = 'Indie game studio crafting
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-stone-800/60 mt-24 py-10 text-center text-stone-600 text-sm">
-      <p class="font-display tracking-widest uppercase text-stone-500 mb-2">PureImpulse Studios</p>
+    <footer class="border-t border-slate-800/50 mt-24 py-10 text-center text-slate-600 text-sm">
+      <p class="font-display tracking-widest uppercase text-slate-500 mb-2">PureImpulse Studios</p>
       <p>&copy; {new Date().getFullYear()} PureImpulse Studios. All rights reserved.</p>
     </footer>
 
@@ -91,7 +91,6 @@ const { title = 'PureImpulse Studios', description = 'Indie game studio crafting
         }
       })
 
-      // Close menu when a link is clicked
       menu?.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
           open = false

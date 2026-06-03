@@ -5,36 +5,36 @@ import Layout from '../layouts/Layout.astro'
 <Layout title="Twilight Rites" description="Twilight Rites — a dark fantasy turn-based action RPG by PureImpulse Studios.">
 
   <section class="max-w-6xl mx-auto px-6 py-24">
-    <p class="font-display text-xs tracking-[0.4em] uppercase text-amber-500/70 mb-4">Our Work</p>
-    <h1 class="font-display text-5xl font-semibold text-stone-100 mb-16">Games</h1>
+    <p class="font-display text-xs tracking-[0.4em] uppercase text-slate-600 mb-4">Our Work</p>
+    <h1 class="font-display text-5xl font-semibold text-slate-100 mb-16">Games</h1>
 
     <!-- Featured game -->
-    <div class="grid md:grid-cols-2 gap-12 items-start border border-stone-800 p-8 mb-16 relative overflow-hidden">
+    <div class="grid md:grid-cols-2 gap-12 items-start border border-slate-800 p-8 mb-16 relative overflow-hidden">
       <div class="absolute top-4 right-4">
-        <span class="text-xs tracking-widest uppercase text-amber-500 border border-amber-700/60 px-3 py-1 font-display">In Development</span>
+        <span class="text-xs tracking-widest uppercase text-slate-400 border border-slate-700 px-3 py-1 font-display">In Development</span>
       </div>
 
       <!-- Art placeholder -->
-      <div class="aspect-video bg-stone-900 border border-stone-800 flex items-center justify-center relative overflow-hidden">
+      <div class="aspect-video bg-slate-900 border border-slate-800 flex items-center justify-center relative overflow-hidden">
         <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_#7c2d1215_0%,_transparent_70%)]"></div>
-        <p class="font-display text-stone-700 text-sm tracking-widest uppercase">Key Art — Coming Soon</p>
+        <p class="font-display text-slate-700 text-sm tracking-widest uppercase">Key Art — Coming Soon</p>
       </div>
 
       <div>
-        <h2 class="font-display text-4xl font-bold text-stone-100 mb-2">Twilight<br/><span class="text-amber-400">Rites</span></h2>
-        <p class="text-stone-600 text-sm tracking-wide mb-6">Turn-Based Action RPG &middot; Unreal Engine 5.5</p>
+        <h2 class="font-display text-4xl font-bold text-slate-100 mb-2">Twilight<br/><span class="text-slate-300">Rites</span></h2>
+        <p class="text-slate-600 text-sm tracking-wide mb-6">Turn-Based Action RPG &middot; Unreal Engine 5.5</p>
 
         <!-- Genres -->
         <div class="flex flex-wrap gap-2 mb-6">
           {['Dark Fantasy', 'Grimdark', 'Cosmic Horror', 'Psychological Thriller', 'Apocalyptic'].map(g => (
-            <span class="text-xs tracking-widest uppercase text-amber-700 border border-amber-900/50 px-2 py-1 font-display">{g}</span>
+            <span class="text-xs tracking-widest uppercase text-slate-600 border border-slate-800 px-2 py-1 font-display">{g}</span>
           ))}
         </div>
 
-        <p class="text-stone-400 leading-relaxed mb-4">
+        <p class="text-slate-400 leading-relaxed mb-4">
           The moon has shattered, and the world plunges into chaos and night eternal. Shadowy monsters descend to feast on the light of humanity, and a fallen pantheon of cosmic beings bestow powers as a last resort.
         </p>
-        <p class="text-stone-500 leading-relaxed mb-8">
+        <p class="text-slate-500 leading-relaxed mb-8">
           Weaponize legendary powers, expunge the encroaching darkness that threatens oblivion, and restore order once more.
         </p>
 
@@ -46,56 +46,56 @@ import Layout from '../layouts/Layout.astro'
             { label: 'Status', value: 'Early Development' },
           ].map(item => (
             <div>
-              <p class="text-stone-600 text-xs tracking-widest uppercase mb-1">{item.label}</p>
-              <p class="text-stone-300 text-sm">{item.value}</p>
+              <p class="text-slate-600 text-xs tracking-widest uppercase mb-1">{item.label}</p>
+              <p class="text-slate-300 text-sm">{item.value}</p>
             </div>
           ))}
         </div>
 
-        <a href="/devlog" class="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 text-sm tracking-wide uppercase transition-colors">
+        <a href="/devlog" class="inline-flex items-center gap-2 text-slate-300 hover:text-white text-sm tracking-wide uppercase transition-colors">
           Follow development &rarr;
         </a>
       </div>
     </div>
 
     <!-- Synopsis -->
-    <div class="border-t border-stone-800 pt-16 mb-16">
-      <p class="font-display text-xs tracking-[0.4em] uppercase text-amber-500/70 mb-4">Synopsis</p>
+    <div class="border-t border-slate-800 pt-16 mb-16">
+      <p class="font-display text-xs tracking-[0.4em] uppercase text-slate-600 mb-4">Synopsis</p>
       <div class="max-w-3xl">
-        <p class="text-stone-300 text-lg leading-relaxed mb-4">
+        <p class="text-slate-300 text-lg leading-relaxed mb-4">
           The moon has shattered and from the abyss reigns darkness eternal. The Shadowborne — shadowy aberrations given form — invade to ravage against life and feast on the moonlight inherent within humanity.
         </p>
-        <p class="text-stone-500 leading-relaxed mb-4">
-          You play as <span class="text-stone-300">Lucian Sov</span>, a recently ordained messianic Moonwoken of the Covenant of Gloam who lost his home to the Shadowborne. With a clear goal, you decide where your journey across the shadow-touched lands takes you — with powerful companions, newfound powers, and eldritch mysteries waiting to be unraveled.
+        <p class="text-slate-500 leading-relaxed mb-4">
+          You play as <span class="text-slate-300">Lucian Sov</span>, a recently ordained messianic Moonwoken of the Covenant of Gloam who lost his home to the Shadowborne. With a clear goal, you decide where your journey across the shadow-touched lands takes you — with powerful companions, newfound powers, and eldritch mysteries waiting to be unraveled.
         </p>
-        <p class="text-stone-500 leading-relaxed">
-          With your companions and a power hailing from the dark side of the moon — bordering on heresy — your choices shape the fate of life itself. <span class="text-stone-400 italic">Will you purge the Shadow of the Nightmare… or be consumed by it?</span>
+        <p class="text-slate-500 leading-relaxed">
+          With your companions and a power hailing from the dark side of the moon — bordering on heresy — your choices shape the fate of life itself. <span class="text-slate-400 italic">Will you purge the Shadow of the Nightmare… or be consumed by it?</span>
         </p>
       </div>
     </div>
 
     <!-- Setting -->
-    <div class="border-t border-stone-800 pt-16 mb-16">
-      <p class="font-display text-xs tracking-[0.4em] uppercase text-amber-500/70 mb-4">The World</p>
+    <div class="border-t border-slate-800 pt-16 mb-16">
+      <p class="font-display text-xs tracking-[0.4em] uppercase text-slate-600 mb-4">The World</p>
       <div class="grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 class="font-display text-3xl text-stone-100 mb-6">A World of Eternal Night</h2>
-          <p class="text-stone-500 leading-relaxed mb-4">
+          <h2 class="font-display text-3xl text-slate-100 mb-6">A World of Eternal Night</h2>
+          <p class="text-slate-500 leading-relaxed mb-4">
             The world exists in a constant state of night — not the typical night, but one filled with dark violets, deep indigos, and flashes of white that paint the sky alongside the strewn fragments of the shattered moon. A sky that conveys mysticism and the terrifying dawn of a new era.
           </p>
-          <p class="text-stone-500 leading-relaxed">
+          <p class="text-slate-500 leading-relaxed">
             The architecture is dominated by a French Gothic style, evoking a sense of ancientness — a world that has long existed before Lucian's time. Where humanity hasn't settled, great jagged peaks, forests, and valleys occupy the land.
           </p>
         </div>
-        <div class="aspect-video bg-stone-900 border border-stone-800 flex items-center justify-center">
-          <p class="font-display text-stone-700 text-sm tracking-widest uppercase">World Art — Coming Soon</p>
+        <div class="aspect-video bg-slate-900 border border-slate-800 flex items-center justify-center">
+          <p class="font-display text-slate-700 text-sm tracking-widest uppercase">World Art — Coming Soon</p>
         </div>
       </div>
     </div>
 
     <!-- Characters -->
-    <div class="border-t border-stone-800 pt-16 mb-16">
-      <p class="font-display text-xs tracking-[0.4em] uppercase text-amber-500/70 mb-8">The Party</p>
+    <div class="border-t border-slate-800 pt-16 mb-16">
+      <p class="font-display text-xs tracking-[0.4em] uppercase text-slate-600 mb-8">The Party</p>
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {[
           { name: 'Lucian Sov', role: 'Protagonist', desc: 'A Moonwoken of the Covenant of Gloam. Bearer of the Twilight Rite — a power born from the dark side of the moon, bordering on heresy.' },
@@ -103,21 +103,21 @@ import Layout from '../layouts/Layout.astro'
           { name: 'Heide Val', role: 'Covenant of the Grave', desc: 'A companion who joins the fray at Theralis. Her knowledge of death and the grave proves invaluable on the journey.' },
           { name: 'Torren Ryth', role: 'Covenant of the Deep', desc: 'A brave soul who joined the fight against the Shadowborne. His loyalty to the party never wavers.' },
         ].map(c => (
-          <div class="border border-stone-800 hover:border-amber-800/40 transition-colors p-6">
-            <div class="w-10 h-10 border border-stone-700 mb-4 flex items-center justify-center">
+          <div class="border border-slate-800 hover:border-slate-700/40 transition-colors p-6">
+            <div class="w-10 h-10 border border-slate-700 mb-4 flex items-center justify-center">
               <div class="w-4 h-4 border border-amber-700/50 rotate-45"></div>
             </div>
-            <h3 class="font-display text-stone-200 text-base mb-1">{c.name}</h3>
-            <p class="text-amber-600/70 text-xs tracking-widest uppercase mb-3">{c.role}</p>
-            <p class="text-stone-500 text-sm leading-relaxed">{c.desc}</p>
+            <h3 class="font-display text-slate-200 text-base mb-1">{c.name}</h3>
+            <p class="text-slate-600 text-xs tracking-widest uppercase mb-3">{c.role}</p>
+            <p class="text-slate-500 text-sm leading-relaxed">{c.desc}</p>
           </div>
         ))}
       </div>
     </div>
 
     <!-- Key Features -->
-    <div class="border-t border-stone-800 pt-16 mb-16">
-      <p class="font-display text-xs tracking-[0.4em] uppercase text-amber-500/70 mb-8">Key Features</p>
+    <div class="border-t border-slate-800 pt-16 mb-16">
+      <p class="font-display text-xs tracking-[0.4em] uppercase text-slate-600 mb-8">Key Features</p>
       <div class="grid md:grid-cols-3 gap-6">
         {[
           { title: 'Third-Person Exploration', desc: 'Freely explore a dark, handcrafted world with cinematic atmosphere and environmental storytelling.' },
@@ -127,24 +127,24 @@ import Layout from '../layouts/Layout.astro'
           { title: 'Sacred Rites System', desc: 'Wield divine powers bestowed by a fallen pantheon of cosmic beings — each Rite tied to a different element.' },
           { title: 'Meaningful Choices', desc: 'Your decisions shape the fate of the world. Multiple endings depending on the path you forge.' },
         ].map(f => (
-          <div class="border border-stone-800 p-6 hover:border-amber-800/40 transition-colors">
-            <h3 class="font-display text-stone-200 text-base mb-3">{f.title}</h3>
-            <p class="text-stone-500 text-sm leading-relaxed">{f.desc}</p>
+          <div class="border border-slate-800 p-6 hover:border-slate-700/40 transition-colors">
+            <h3 class="font-display text-slate-200 text-base mb-3">{f.title}</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">{f.desc}</p>
           </div>
         ))}
       </div>
     </div>
 
     <!-- Enemies / Creatures -->
-    <div class="border-t border-stone-800 pt-16">
-      <p class="font-display text-xs tracking-[0.4em] uppercase text-amber-500/70 mb-2">The Darkness</p>
-      <h2 class="font-display text-3xl text-stone-100 mb-4">Enemies</h2>
-      <p class="text-stone-500 leading-relaxed mb-10 max-w-xl">
+    <div class="border-t border-slate-800 pt-16">
+      <p class="font-display text-xs tracking-[0.4em] uppercase text-slate-600 mb-2">The Darkness</p>
+      <h2 class="font-display text-3xl text-slate-100 mb-4">Enemies</h2>
+      <p class="text-slate-500 leading-relaxed mb-10 max-w-xl">
         Shadowy monsters descend to feast on the light of humanity. Each creature is a twisted remnant of the world before the moon shattered — born from Somneiros, the Aspect of Shadow.
       </p>
       <div class="grid md:grid-cols-2 gap-8">
-        <div class="border border-stone-800 hover:border-amber-800/40 transition-colors overflow-hidden group">
-          <div class="overflow-hidden bg-stone-900">
+        <div class="border border-slate-800 hover:border-slate-700/40 transition-colors overflow-hidden group">
+          <div class="overflow-hidden bg-slate-900">
             <img
               src="/Shadowborne%20%231.jpeg"
               alt="Shadowborne concept art"
@@ -152,16 +152,16 @@ import Layout from '../layouts/Layout.astro'
             />
           </div>
           <div class="p-6">
-            <p class="font-display text-xs tracking-[0.3em] uppercase text-amber-600/70 mb-2">Concept Art</p>
-            <h3 class="font-display text-stone-200 text-xl mb-2">Shadowborne</h3>
-            <p class="text-stone-500 text-sm leading-relaxed">Ink-black aberrations of pure dark matter and energy, created by Somneiros, the Aspect of Shadow. They invade the Realm of Light to ravage life and feast on the moonlight inherent within humanity.</p>
+            <p class="font-display text-xs tracking-[0.3em] uppercase text-slate-600 mb-2">Concept Art</p>
+            <h3 class="font-display text-slate-200 text-xl mb-2">Shadowborne</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">Ink-black aberrations of pure dark matter and energy, created by Somneiros, the Aspect of Shadow. They invade the Realm of Light to ravage life and feast on the moonlight inherent within humanity.</p>
           </div>
         </div>
 
-        <div class="border border-stone-800 border-dashed flex items-center justify-center h-full min-h-64 p-8 text-center">
+        <div class="border border-slate-800 border-dashed flex items-center justify-center h-full min-h-64 p-8 text-center">
           <div>
-            <p class="font-display text-stone-700 text-sm tracking-widest uppercase mb-2">More Coming Soon</p>
-            <p class="text-stone-800 text-xs">Additional enemy concepts in development</p>
+            <p class="font-display text-slate-700 text-sm tracking-widest uppercase mb-2">More Coming Soon</p>
+            <p class="text-slate-800 text-xs">Additional enemy concepts in development</p>
           </div>
         </div>
       </div>

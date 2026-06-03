@@ -3,6 +3,19 @@
 @theme {
   --font-display: 'Cinzel', serif;
   --font-sans: 'Inter', sans-serif;
+
+  /* Moonlight silver accent */
+  --color-moon-50: #f0f4ff;
+  --color-moon-100: #e2eaff;
+  --color-moon-200: #c8d4f0;
+  --color-moon-300: #a8bde0;
+  --color-moon-400: #8aa3cc;
+  --color-moon-500: #6b87b5;
+  --color-moon-600: #4e6a96;
+  --color-moon-700: #364f75;
+  --color-moon-800: #203454;
+  --color-moon-900: #0f1f3a;
+  --color-moon-950: #060d1f;
 }
 
 .font-display {
@@ -13,7 +26,17 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #06080f;
+}
+
 ::selection {
-  background: #f59e0b40;
-  color: #fef3c7;
+  background: #8aa3cc30;
+  color: #e2eaff;
+}
+
+/* Game title image blend — removes white bg, shows text as moonlight silver */
+.title-img-blend {
+  filter: invert(1);
+  mix-blend-mode: screen;
 }
